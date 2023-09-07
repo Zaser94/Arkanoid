@@ -1,0 +1,6 @@
+- A vector is a presentation of a direction associated with a magnitude while a scalar is just a magnitude.
+- The Zero Vector: 0 length, no direction
+- Any vector * scalar 0 = Vector Zero
+- Addition, subtraction and scalar multiplication between two vectors don't require a coordinate system reference.
+
+A * B = |A| * |B| * cos 0

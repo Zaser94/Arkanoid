@@ -1,0 +1,9 @@
+﻿  Arkanoid.cpp
+D:\Visual Studio Projects\Arkanoid\Arkanoid.cpp(150,55): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Visual Studio Projects\Arkanoid\Arkanoid.cpp(687,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  Generando código
+  1 of 543 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  Arkanoid.vcxproj -> D:\Visual Studio Projects\Arkanoid\x64\Release\Arkanoid.exe

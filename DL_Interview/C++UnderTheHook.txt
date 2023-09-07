@@ -1,0 +1,38 @@
+
+- Struct members are laid out (in memmory) in their declaration order no matter is C or C++
+- C++ is based upon C so you can compile C code in a C++ compiler without too many changes (upward compatible)
+- Although, C++ is Object-Oriented Programming Language: extends C strucs into classes which present the classical OOP feratures like 
+inheritance, encapsulation and polymorphism (constructors).
+- Members declared with different access declarators (public, private/ private) can be laid out in any order
+- Single Inheritance: the memory address of the base class instance is stored in the first byte of the address of the child instance
+- Use virtual base classses avoid memory duplications of intances, sin every derived class, saves a copy of its base class
+- Memory layout in C++ can be clasified in 4 segments:
+	Stack: storages temporary variables and virtual table pointers (pointing to virtual overriden functions) one per base class. Grows downwards. R/W
+	Heap: dinamyc memory allocation (malloc/free) R/W
+	Data: storage static and global variables.R/W. Two sub-segments: 
+		Initialized.
+		Uninitalized(BSS) initialized to zero by the kernel before program execution 
+	Text/Code: executable instructions (all functions). Read Only.
+	
+- & reference operator, * dereference operator
+- Static variables are not temporary (has a scope untill the program ends) and only initialise once. Inside a class all instances share the same reference to the static variable 
+	MyClass::StaticVar1 = 1;
+- Static Class
+
+Accessing Data Members:
+- When you access to a class member using a pointer Class->Member, an inplicit displacement is added to the pointer's address
+- Single inheritance: the displacement to the base class address is a constant zero
+- Multiple inheritance: the displacement is a non zero constant
+- Virtual inheritance: fecht in the stack the pointer to the virtual table, fecth the adress entry to the virtual function. Add that address to the
+to the previous pointer. It presents the most expensive data member access, unless the type of the derived class is statically known.
+
+- Quite unexpensive to explicitely cast a pointer to another pointer type if there is a base-derived relationship between then. The compiler just
+adds or substract the displacement between both.
+- Cast to a virtual base class is more expensive but is a good practise if you need to access to its members from a derived class 
+(you avoid a lot of expensive virtual base field accesses)
+- Member functions of Class X receives a special hidden paramter X *const called this which is implicitly initilized during object instantiation.
+Every time inside a class function you acccess to a member variable of that class you are using this->mV
+- Non-Virtual functions calls are statically determined at compile time. 
+- Virtual function calls implements a mechanism based on a virtual table pointer which contains the addresses of the members function that are overridden that class's virtual function.
+ So that, the virtual callings are determined at run time.
+-There will be in the Stack Segment one virtual function table pointer for every inherit base class with virtual functions.

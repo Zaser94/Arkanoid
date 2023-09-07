@@ -1,0 +1,4 @@
+﻿  Arkanoid.cpp
+D:\Visual Studio Projects\Arkanoid\Arkanoid.cpp(149,55): warning C4244: 'argumento': conversión de 'int' a 'float'; posible pérdida de datos
+D:\Visual Studio Projects\Arkanoid\Arkanoid.cpp(686,37): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  Arkanoid.vcxproj -> D:\Visual Studio Projects\Arkanoid\x64\Debug\Arkanoid.exe

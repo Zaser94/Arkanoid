@@ -1,0 +1,37 @@
+Melodia:
+
+
+Merzouga:
+Basically, after finishing my master degree I want to perfom my game development skills, 
+specially practising level design, so I made an open world survival game located in a dangerous alien desert. 
+	- The main mechanic is surviving the extreme temperature by extracting liquid from enviromental elements (plants, liquid deposits)
+	  or find any shadow or shelter.
+    - Temperature affect your movement, and cause visions, headaches and so on
+	- I did an intro low cost cinematic (you can see it in the trailer)
+	- The shadow check is dinamic. I placed a quite far away target point who simulates the sun location.
+	From that point a raycast is throwed right to the player's head every few seconds. 
+	- A colossal mothership has been crashed. It carried thousands of Pilgrims (alien race) whom tried to reach the Solar Temple.
+	  The trip was insure so, the Astronomic Interdimensional Inssurance Company send you to locate any surviver and
+	  guide them to the Solar Temple.
+	- So that there is a huge amount of corpses all over the desert. I made a tool for placing N corpses randomly in a dinamic area 
+	  at construction time (before the game begins). It use raycasting and get the normal vector from every calculated ground point.
+	- I did 3 Artificial Inteligent characters: huge worms, wolfs and a fox who perfom the role of the classic companion who appears sometimes 
+	  and help the player with good advices. Rather than Behaviour Trees I used just a machine state inside a custom AI controller class.
+	- I developed a tracker machine for helping player find the survivals. Its a round robot who moves straight forward
+		and sign any suvivor by VFX. You can throw 3, the come back to you if don't find anything.
+	- The game development is close but the game design requires some iterations and playstesting.
+
+Hit & Rush:
+	- When I entered Blackmouth they were finishing a migration from and old UE version to the classic 4.25.
+      So that, during my first months in this company I resolved a huge amount of bugs while I learn about the
+	  project complex structure. The most funny bugs where the ones related to gameplay: chest doesnt spawn objects,
+	  grenades doesn't explode, the camera missbehave with collisions, etc.
+	- In the recent months we have been doing an almost complete rework of the class main structure game, there were a lot of bugs and low quality code
+    - Shooting rework. I re-implement partially the shooting system improving so much the legibility and flow.
+	  With have 9 different weapons each of them has like 20 game design parameters like the range, damage, recoil, fire rate, 
+	  . At the beginning of the game I read that excels and initialises every weapon.
+	- Some weapons like the sniper use projectiles. Unreal Engine Default's collision system doesn't work with 
+	high speed projectiles so I did my own collision system based on casting a capsule between bullet's position in each frame.
+	
+	
+	

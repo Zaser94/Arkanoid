@@ -1,0 +1,2 @@
+C:\Users\alexi\OneDrive\Documentos\Arkanoid\x64\Debug\Arkanoid.exe
+D:\Visual Studio Projects\Arkanoid\x64\Debug\Arkanoid.exe
